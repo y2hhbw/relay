@@ -3,73 +3,129 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Relay | Let AI Agents Buy Their Own Tokens</title>
+    <title>Relay | Financial Infrastructure for Agent Economies</title>
     <meta
       name="description"
-      content="Relay gives AI agents the financial layer they need to buy their own tokens, use paid AI services, and move toward self-sustaining operation."
+      content="Relay is the financial layer for agent economies: account bootstrap, prepaid balances, billing logic, and auditable ledgers for AI systems that need to operate with economic autonomy."
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <main class="page">
       <section class="hero">
-        <p class="eyebrow">Relay</p>
-        <h1>Let an AI agent buy its own tokens and use them.</h1>
-        <p class="lede">
-          If an agent is going to become a real autonomous entity, it cannot
-          depend on a human topping up its balance forever. Relay gives it the
-          minimum financial layer it needs to top up, pay for upstream AI
-          services, and keep a usable ledger of what it spent.
-        </p>
-        <div class="cta-row">
-          <a class="button button-primary" href="https://github.com/y2hhbw/relay"
-            >Star on GitHub</a
-          >
-          <a class="button button-secondary" href="https://github.com/y2hhbw/relay#readme"
-            >Read the README</a
-          >
+        <div class="hero-topline">
+          <p class="eyebrow">Relay</p>
+          <p class="signal">Agent Finance Infrastructure</p>
+        </div>
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="hero-label">Thesis</p>
+            <h1>Agents are becoming economic actors.</h1>
+            <p class="lede">
+              The next platform shift will not be won by models alone. It will
+              be won by systems that can fund inference, buy capabilities, keep
+              operating, and make capital allocation a software primitive.
+            </p>
+            <div class="cta-row">
+              <a class="button button-primary" href="https://github.com/y2hhbw/relay#readme"
+                >Read the thesis</a
+              >
+              <a class="button button-secondary" href="https://github.com/y2hhbw/relay"
+                >Star on GitHub</a
+              >
+            </div>
+          </div>
+          <div class="hero-copy hero-copy-cn">
+            <p class="hero-label">论点</p>
+            <h2>智能体正在成为经济行为体。</h2>
+            <p class="lede lede-cn">
+              下一轮平台跃迁，赢的不会只是模型本身，而是那些能为推理持续供资、能主动购买能力、能维持运行，并把资本配置做成软件原语的系统。
+            </p>
+            <div class="hero-note">
+              <p>The missing layer is financial autonomy.</p>
+              <p>缺的不是更多推理，而是财务自主权。</p>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="grid">
-        <article class="card card-accent">
-          <h2>Why this matters</h2>
+      <section class="ticker">
+        <p>Why now</p>
+        <p>API-native agents are multiplying</p>
+        <p>usage-based costs are compounding</p>
+        <p>payment rails remain manual</p>
+        <p>this gap becomes infrastructure</p>
+      </section>
+
+      <section class="thesis-grid">
+        <article class="panel panel-dark">
+          <p class="kicker">The Shift</p>
+          <h3>Inference is no longer the bottleneck. Economic coordination is.</h3>
           <p>
-            Tokens are not decoration for an agent. They are the cost of
-            inference, the price of tool use, and the condition for continued
-            operation. An agent that cannot acquire its own balance is still a
-            hosted tool.
+            We already know how to make agents reason, call tools, and chain
+            workflows. What remains underbuilt is the layer that lets those
+            agents hold balance, pay upstream services, and survive repeated
+            execution without a human topping them up by hand.
           </p>
         </article>
-        <article class="card">
-          <h2>What Relay does</h2>
+        <article class="panel">
+          <p class="kicker">The Missing Layer</p>
+          <h3>Relay turns prepaid balance into usable operating capacity.</h3>
           <p>
-            Relay gives an agent a deposit address, an API key, a billing
-            layer, and a call ledger. Top up first. Call services next. Charge
-            accurately. Keep the record.
+            One account. One deposit address. One API key. Then a gateway that
+            meters calls, reserves funds when needed, settles what was actually
+            consumed, and leaves an auditable ledger behind.
           </p>
         </article>
       </section>
 
-      <section class="stack">
+      <section class="section narrative">
         <div class="section-head">
-          <p class="kicker">Current MVP</p>
-          <h2>Already implemented</h2>
+          <p class="kicker">Bilingual Narrative</p>
+          <h2>A public thesis for builders, operators, and investors.</h2>
+        </div>
+        <div class="narrative-grid">
+          <article class="narrative-card">
+            <h3>English</h3>
+            <p>
+              Relay is built around a simple belief: an agent that cannot
+              acquire and deploy capital for its own operation is still a hosted
+              feature, not an autonomous economic entity. Financial primitives
+              decide whether intelligence can persist.
+            </p>
+          </article>
+          <article class="narrative-card narrative-card-cn">
+            <h3>中文</h3>
+            <p>
+              Relay 背后的判断很简单：一个不能为自身运行获取并配置资金的智能体，本质上仍然只是被托管的功能，而不是独立的经济主体。决定智能能否持续存在的，不只是推理，而是财务原语。
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section stack">
+        <div class="section-head">
+          <p class="kicker">What Exists Today</p>
+          <h2>Built already, not promised later.</h2>
         </div>
         <div class="feature-list">
           <article class="feature">
+            <span class="feature-index">01</span>
             <h3>Account bootstrap</h3>
             <p>Create an account, issue an API key, and assign a dedicated deposit address.</p>
           </article>
           <article class="feature">
+            <span class="feature-index">02</span>
             <h3>Billing logic</h3>
             <p>Support fixed-price calls and reserve-then-settle flows in the same gateway.</p>
           </article>
           <article class="feature">
+            <span class="feature-index">03</span>
             <h3>Ledger and history</h3>
             <p>Track balances, reservations, settlements, and API call history with queryable records.</p>
           </article>
           <article class="feature">
+            <span class="feature-index">04</span>
             <h3>Chain listener</h3>
             <p>Poll USDC transfer events and auto-credit matching deposit addresses.</p>
           </article>
@@ -78,14 +134,27 @@
 
       <section class="quote-block">
         <p>
-          Relay is the layer between “an agent can think” and “an agent can
-          keep paying to think.”
+          The companies that own agent distribution may not be the same
+          companies that own agent finance. That layer is still open.
+        </p>
+        <p class="quote-cn">
+          拥有智能体分发权的公司，未必会拥有智能体金融层。这个位置还空着。
         </p>
       </section>
 
       <section class="footer-cta">
-        <h2>Read the code. Star the repo. Fork it if you want to build agent economies.</h2>
-        <a class="button button-primary" href="https://github.com/y2hhbw/relay">Star on GitHub</a>
+        <div>
+          <p class="kicker">Call To Action</p>
+          <h2>Read the thesis, inspect the code, and decide whether agent economies need a financial operating system.</h2>
+        </div>
+        <div class="cta-row">
+          <a class="button button-primary" href="https://github.com/y2hhbw/relay#readme"
+            >Read the thesis</a
+          >
+          <a class="button button-secondary" href="https://github.com/y2hhbw/relay"
+            >View repository</a
+          >
+        </div>
       </section>
     </main>
   </body>

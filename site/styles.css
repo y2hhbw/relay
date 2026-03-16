@@ -137,6 +137,9 @@ h1 {
 }
 
 .lang-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   min-height: 42px;
   padding: 0 16px;
   border: 1px solid rgba(255, 246, 233, 0.28);
@@ -145,6 +148,7 @@ h1 {
   color: var(--cream);
   font: inherit;
   font-size: 0.9rem;
+  text-decoration: none;
   cursor: pointer;
 }
 
@@ -304,16 +308,6 @@ h1 {
   color: rgba(255, 246, 233, 0.74);
   font-size: 1.02rem;
   line-height: 1.7;
-}
-
-.lang-panel,
-[data-lang-copy] {
-  display: none;
-}
-
-.lang-panel.is-active,
-[data-lang-copy].is-active {
-  display: block;
 }
 
 .quote-block {

@@ -1,24 +1,35 @@
 # Relay
 
-Relay 是一个面向 AI Agent 的预付费 API 网关。
+AI Agent 如果是一个真正的自治体，就不能永远靠人给它充钱。
 
-它解决的不是“怎么调用模型”，而是“怎么让 Agent 在有明确余额控制、可预测计费和可审计记录的前提下，持续调用付费上游服务”。
+对 Agent 来说，token 不是装饰品，是它思考、调用工具、持续工作的生存资料。它能自己买 token，才算开始自己生存。它要是还能自己赚钱，再把赚来的钱继续买 token，它才是一个真正能自给自足的个体。
+
+Relay 做的，就是把这件事补上。它给 Agent 一套最小但完整的资金能力：先充值，再调用，再扣费，余额和账单都留痕。
 
 English version: [README.md](README.md)
 
 ## 这个项目要解决什么问题
 
-大多数 Agent 技术栈默认认为 API 访问已经有资金支持，而且调用权限天然可信。
+今天的大多数 Agent 都会调模型、调搜索、调 OCR，但一到付费能力，立刻退回手工作坊模式。
 
-现实里，中间其实有一层经常被忽略：
+问题就在这里：
 
-- Agent 需要先有钱，才能稳定持续调用
-- 不同服务的计费模型不同
-- 调用需要审计
-- 失败时不能把钱静默扣没
-- 平台通常希望统一收款，之后再和服务方结算
+- Agent 想自己连续工作，先得有可用余额
+- 不同 AI 服务计费方式不同，不能靠硬编码乱扣
+- 调用失败了，钱不能黑箱消失
+- 跑了一堆请求之后，得知道钱花到哪里去了
+- 平台要统一收款，后面再和上游服务方结算
 
-Relay 就是试图把这一层显式做出来。
+少了这一层，所谓自治很多时候只是半自治。
+
+它做的事情很直接：
+
+- 给每个 Agent 账户生成 API key 和充值地址
+- Agent 先充值
+- Agent 用统一接口去买搜索、OCR、LLM 等能力
+- Relay 负责扣费、冻结、结算和审计
+
+一句话说，Relay 让 AI Agent 真正具备“自己买 token 自己用”的能力。
 
 ## 当前已经实现了什么
 
@@ -347,6 +358,13 @@ python3 -m compileall app tests
 先看 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
 如果你想做比较大的改动，先读 [docs/mvp-implementation.md](docs/mvp-implementation.md)，确保讨论仍然锚定在当前 MVP 边界内。
+
+## 支持
+
+如果 Relay 对你有帮助，你可以通过下面的方式支持我：
+
+- [NOWPayments](https://nowpayments.io/payment/?iid=5525026308&source=button)
+- [Buy Me a Coffee](https://www.buymeacoffee.com/hallidayyy)
 
 ## 许可证
 

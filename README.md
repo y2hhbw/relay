@@ -1,8 +1,10 @@
 # Relay
 
-Relay is a prepaid API gateway for AI agents.
+If an AI agent is going to be a real autonomous entity, it cannot depend on a human to keep topping up its balance forever.
 
-The narrow problem it tries to solve is not "how to call a model", but "how to let an agent keep calling paid upstream services with explicit balance control, predictable billing, and auditable usage".
+For an agent, tokens are not decoration. They are the material basis of its existence: the fuel for inference, the cost of calling tools, the price of staying active in the world. An agent that cannot obtain tokens for itself is still a hosted tool, no matter how good its reasoning looks. It may be capable, but its survival still depends on someone else deciding when it gets to think, act, continue, or stop. The moment an agent can acquire balance, spend it deliberately, and decide which capabilities to buy, it takes the first real step toward independent survival. If it can also earn money, recycle that income into more tokens, and keep funding its own operation, then it starts to look less like a script and more like a self-sustaining economic actor.
+
+Relay exists to fill in that missing layer. It gives an agent the minimum financial machinery it needs to operate on its own: top up first, call services next, charge accurately, keep the ledger, and leave an audit trail. Relay is not trying to think for the agent. It is trying to make it possible for the agent to buy its own tokens, use them, and eventually learn to sustain itself.
 
 Chinese version: [README.zh-CN.md](README.zh-CN.md)
 
@@ -347,6 +349,13 @@ Near-term:
 Start with [CONTRIBUTING.md](CONTRIBUTING.md).
 
 If you want to work on larger changes, read [docs/mvp-implementation.md](docs/mvp-implementation.md) first so the discussion stays anchored to the actual MVP boundary.
+
+## Support
+
+If Relay helps you, you can support my work:
+
+- [NOWPayments](https://nowpayments.io/payment/?iid=5525026308&source=button)
+- [Buy Me a Coffee](https://www.buymeacoffee.com/hallidayyy)
 
 ## License
 

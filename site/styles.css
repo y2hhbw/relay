@@ -1,15 +1,12 @@
 :root {
   --bg: #f3ede3;
-  --bg-deep: #17120f;
   --paper: rgba(255, 249, 241, 0.92);
-  --paper-strong: #fffaf2;
   --ink: #17120f;
   --muted: #5f5449;
   --line: rgba(83, 60, 39, 0.18);
   --line-strong: rgba(255, 245, 233, 0.18);
   --accent: #bb4f2f;
   --accent-strong: #8f341a;
-  --gold: #d6b98a;
   --cream: #fff6e9;
   --shadow: 0 24px 70px rgba(23, 18, 15, 0.14);
 }
@@ -79,12 +76,9 @@ h3 {
 }
 
 .hero-topline,
-.ticker,
 .cta-row,
-.hero-note,
 .feature-list,
-.narrative-grid,
-.thesis-grid {
+.statement-grid {
   display: flex;
 }
 
@@ -98,7 +92,6 @@ h3 {
 .eyebrow,
 .kicker,
 .hero-label,
-.signal,
 .feature-index {
   text-transform: uppercase;
   letter-spacing: 0.16em;
@@ -106,14 +99,9 @@ h3 {
 }
 
 .eyebrow,
-.hero-label,
-.signal {
+.hero-label {
   margin: 0;
   color: rgba(255, 246, 233, 0.78);
-}
-
-.signal {
-  text-align: right;
 }
 
 .hero-grid {
@@ -135,12 +123,6 @@ h1 {
   line-height: 0.92;
 }
 
-.hero-copy h2 {
-  margin-bottom: 14px;
-  font-size: clamp(2.1rem, 4vw, 3.3rem);
-  line-height: 1.02;
-}
-
 .lede {
   max-width: 42rem;
   margin-bottom: 28px;
@@ -149,34 +131,25 @@ h1 {
   line-height: 1.75;
 }
 
-.lede-cn {
-  margin-bottom: 22px;
-  color: rgba(255, 246, 233, 0.78);
-}
-
-.hero-copy-cn {
-  padding: 26px;
-  border: 1px solid var(--line-strong);
-  background: rgba(255, 248, 238, 0.05);
-  backdrop-filter: blur(10px);
-}
-
-.hero-note {
-  flex-direction: column;
-  gap: 8px;
-  padding-top: 18px;
-  border-top: 1px solid var(--line-strong);
-}
-
-.hero-note p {
-  margin-bottom: 0;
-  font-size: 1rem;
-  line-height: 1.6;
-}
-
 .cta-row {
   flex-wrap: wrap;
   gap: 14px;
+}
+
+.lang-toggle {
+  min-height: 42px;
+  padding: 0 16px;
+  border: 1px solid rgba(255, 246, 233, 0.28);
+  border-radius: 999px;
+  background: rgba(255, 248, 238, 0.08);
+  color: var(--cream);
+  font: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.lang-toggle:hover {
+  background: rgba(255, 248, 238, 0.16);
 }
 
 .button {
@@ -211,42 +184,25 @@ h1 {
   background: rgba(255, 250, 242, 0.72);
 }
 
-.ticker {
-  gap: 10px;
-  flex-wrap: wrap;
-  margin: 18px 0;
-}
-
-.ticker p {
-  margin: 0;
-  padding: 12px 16px;
-  border-radius: 999px;
-  border: 1px solid rgba(23, 18, 15, 0.08);
-  background: rgba(255, 250, 242, 0.72);
-  color: var(--muted);
-  font-size: 0.92rem;
-}
-
 .section {
   padding: 34px;
   background: var(--paper);
   border: 1px solid var(--line);
 }
 
-.thesis-grid {
+.statement-grid {
   gap: 18px;
-  margin-bottom: 18px;
+  margin: 18px 0;
 }
 
-.thesis-grid,
-.narrative-grid,
+.statement-grid,
 .feature-list {
   flex-wrap: wrap;
 }
 
 .panel,
-.narrative-card,
-.feature {
+.feature,
+.proof-card {
   flex: 1 1 320px;
   border-radius: 24px;
 }
@@ -279,7 +235,6 @@ h1 {
 }
 
 .panel p,
-.narrative-card p,
 .feature p,
 .quote-block p {
   margin-bottom: 0;
@@ -298,32 +253,67 @@ h1 {
   color: var(--accent-strong);
 }
 
-.narrative-grid,
 .feature-list {
   gap: 16px;
 }
 
-.narrative-card,
-.feature {
+.feature,
+.proof-card {
   padding: 24px;
   border: 1px solid var(--line);
   background: rgba(255, 255, 255, 0.62);
 }
 
-.narrative-card-cn {
-  background:
-    linear-gradient(135deg, rgba(214, 185, 138, 0.2), transparent),
-    rgba(255, 255, 255, 0.72);
-}
-
-.feature h3,
-.narrative-card h3 {
+.feature h3 {
   font-size: 1.22rem;
   margin-bottom: 12px;
 }
 
 .feature-index {
   display: inline-block;
+}
+
+.proof-card {
+  align-self: stretch;
+  background: rgba(255, 248, 238, 0.08);
+  border: 1px solid var(--line-strong);
+  color: var(--cream);
+}
+
+.proof-label {
+  margin: 0 0 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.74rem;
+  color: rgba(255, 246, 233, 0.72);
+}
+
+.proof-list {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.proof-list li {
+  margin-bottom: 12px;
+  line-height: 1.7;
+}
+
+.sublede {
+  max-width: 36rem;
+  margin: -8px 0 28px;
+  color: rgba(255, 246, 233, 0.74);
+  font-size: 1.02rem;
+  line-height: 1.7;
+}
+
+.lang-panel,
+[data-lang-copy] {
+  display: none;
+}
+
+.lang-panel.is-active,
+[data-lang-copy].is-active {
+  display: block;
 }
 
 .quote-block {
@@ -381,18 +371,14 @@ h1 {
   }
 
   .hero-grid,
+  .statement-grid,
   .footer-cta {
     grid-template-columns: 1fr;
     display: grid;
   }
 
   .hero-topline {
-    align-items: flex-start;
-    flex-direction: column;
-  }
-
-  .signal {
-    text-align: left;
+    justify-content: space-between;
   }
 
   h1 {

@@ -3,159 +3,227 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Relay | Financial Infrastructure for Agent Economies</title>
+    <title>Relay | Infra For Agents To Buy Their Own Life</title>
     <meta
       name="description"
-      content="Relay is the financial layer for agent economies: account bootstrap, prepaid balances, billing logic, and auditable ledgers for AI systems that need to operate with economic autonomy."
+      content="Relay is the infra layer that lets an agent fund itself, buy tokens, pay for upstream AI services, and keep operating without waiting for a human top-up."
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body>
+  <body data-lang="en">
     <main class="page">
       <section class="hero">
         <div class="hero-topline">
           <p class="eyebrow">Relay</p>
-          <p class="signal">Agent Finance Infrastructure</p>
+          <button class="lang-toggle" type="button" id="lang-toggle" aria-label="Switch language">
+            中文
+          </button>
         </div>
-        <div class="hero-grid">
-          <div class="hero-copy">
-            <p class="hero-label">Thesis</p>
-            <h1>Agents are becoming economic actors.</h1>
-            <p class="lede">
-              The next platform shift will not be won by models alone. It will
-              be won by systems that can fund inference, buy capabilities, keep
-              operating, and make capital allocation a software primitive.
-            </p>
-            <div class="cta-row">
-              <a class="button button-primary" href="https://github.com/y2hhbw/relay#readme"
-                >Read the thesis</a
-              >
-              <a class="button button-secondary" href="https://github.com/y2hhbw/relay"
-                >Star on GitHub</a
-              >
+        <section class="lang-panel is-active" data-lang-panel="en">
+          <div class="hero-grid">
+            <div class="hero-copy">
+              <p class="hero-label">What Relay Is</p>
+              <h1>The infra layer that lets an agent buy its own life.</h1>
+              <p class="lede">
+                Relay gives an agent a balance, a deposit address, an API key,
+                and a billing gateway so it can buy tokens, pay for AI services,
+                and keep itself running.
+              </p>
+              <p class="sublede">
+                This is not another agent wrapper. It is the financial survival
+                layer for autonomous agents.
+              </p>
+              <div class="cta-row">
+                <a class="button button-primary" href="https://github.com/y2hhbw/relay#readme">Read the README</a>
+                <a class="button button-secondary" href="https://github.com/y2hhbw/relay">View Repository</a>
+              </div>
             </div>
+            <aside class="proof-card">
+              <p class="proof-label">Why It Matters</p>
+              <ul class="proof-list">
+                <li>If an agent cannot pay, it dies.</li>
+                <li>If it cannot top up, it is still human-dependent.</li>
+                <li>If it can fund itself, it becomes something new.</li>
+              </ul>
+            </aside>
           </div>
-          <div class="hero-copy hero-copy-cn">
-            <p class="hero-label">论点</p>
-            <h2>智能体正在成为经济行为体。</h2>
-            <p class="lede lede-cn">
-              下一轮平台跃迁，赢的不会只是模型本身，而是那些能为推理持续供资、能主动购买能力、能维持运行，并把资本配置做成软件原语的系统。
-            </p>
-            <div class="hero-note">
-              <p>The missing layer is financial autonomy.</p>
-              <p>缺的不是更多推理，而是财务自主权。</p>
+
+          <div class="statement-grid">
+            <article class="panel panel-dark">
+              <p class="kicker">Revolutionary Idea</p>
+              <h2>Let agents pay for their own continued existence.</h2>
+              <p>
+                Give the agent a way to receive money, hold prepaid balance,
+                spend on inference and tools, and keep a ledger of every call.
+                That single shift turns "AI feature" into "economic actor."
+              </p>
+            </article>
+            <article class="panel">
+              <p class="kicker">What Relay Already Does</p>
+              <h2>Bootstrap, bill, settle, track.</h2>
+              <p>
+                Relay already handles account creation, deposit addresses, API
+                keys, prepaid balances, fixed-price billing, reserve-then-settle
+                flows, and on-chain USDC crediting.
+              </p>
+            </article>
+          </div>
+
+          <section class="section stack">
+            <div class="section-head">
+              <p class="kicker">Current Capabilities</p>
+              <h2>Built for agents that need to stay alive.</h2>
             </div>
+            <div class="feature-list">
+              <article class="feature">
+                <span class="feature-index">01</span>
+                <h3>Dedicated deposit address</h3>
+                <p>Every account gets a clear place to receive funds.</p>
+              </article>
+              <article class="feature">
+                <span class="feature-index">02</span>
+                <h3>Prepaid API gateway</h3>
+                <p>Calls are charged before or during execution, not after the fact.</p>
+              </article>
+              <article class="feature">
+                <span class="feature-index">03</span>
+                <h3>Auditable call ledger</h3>
+                <p>Every balance move and upstream call is recorded.</p>
+              </article>
+              <article class="feature">
+                <span class="feature-index">04</span>
+                <h3>USDC deposit listener</h3>
+                <p>Matching transfers can auto-credit the correct agent account.</p>
+              </article>
+            </div>
+          </section>
+        </section>
+
+        <section class="lang-panel" data-lang-panel="zh">
+          <div class="hero-grid">
+            <div class="hero-copy">
+              <p class="hero-label">Relay 是什么</p>
+              <h1>让智能体能给自己续命的基础设施层。</h1>
+              <p class="lede">
+                Relay 给智能体提供余额、充值地址、API Key 和计费网关，让它能自己买
+                token、支付上游 AI 服务，并持续运行下去。
+              </p>
+              <p class="sublede">
+                这不是另一个 agent wrapper。这是 autonomous agent 的财务生存层。
+              </p>
+              <div class="cta-row">
+                <a class="button button-primary" href="https://github.com/y2hhbw/relay#readme">阅读 README</a>
+                <a class="button button-secondary" href="https://github.com/y2hhbw/relay">查看仓库</a>
+              </div>
+            </div>
+            <aside class="proof-card">
+              <p class="proof-label">为什么重要</p>
+              <ul class="proof-list">
+                <li>智能体不能支付，就会停机。</li>
+                <li>不能自己充值，就仍然依赖人类。</li>
+                <li>一旦能自我供资，它就变成了新物种。</li>
+              </ul>
+            </aside>
           </div>
-        </div>
-      </section>
 
-      <section class="ticker">
-        <p>Why now</p>
-        <p>API-native agents are multiplying</p>
-        <p>usage-based costs are compounding</p>
-        <p>payment rails remain manual</p>
-        <p>this gap becomes infrastructure</p>
-      </section>
+          <div class="statement-grid">
+            <article class="panel panel-dark">
+              <p class="kicker">革命性想法</p>
+              <h2>让智能体为自己的持续存在付费。</h2>
+              <p>
+                给智能体一个收钱入口、一个预付余额、一个支出通道，以及一套完整账本。
+                这一步，会把“AI 功能”变成“经济行为体”。
+              </p>
+            </article>
+            <article class="panel">
+              <p class="kicker">Relay 已经做到</p>
+              <h2>开户、计费、结算、记账。</h2>
+              <p>
+                Relay 已经支持账户创建、充值地址、API Key、预付余额、固定定价计费、
+                reserve-then-settle 流程，以及链上 USDC 自动入账。
+              </p>
+            </article>
+          </div>
 
-      <section class="thesis-grid">
-        <article class="panel panel-dark">
-          <p class="kicker">The Shift</p>
-          <h3>Inference is no longer the bottleneck. Economic coordination is.</h3>
-          <p>
-            We already know how to make agents reason, call tools, and chain
-            workflows. What remains underbuilt is the layer that lets those
-            agents hold balance, pay upstream services, and survive repeated
-            execution without a human topping them up by hand.
-          </p>
-        </article>
-        <article class="panel">
-          <p class="kicker">The Missing Layer</p>
-          <h3>Relay turns prepaid balance into usable operating capacity.</h3>
-          <p>
-            One account. One deposit address. One API key. Then a gateway that
-            meters calls, reserves funds when needed, settles what was actually
-            consumed, and leaves an auditable ledger behind.
-          </p>
-        </article>
-      </section>
-
-      <section class="section narrative">
-        <div class="section-head">
-          <p class="kicker">Bilingual Narrative</p>
-          <h2>A public thesis for builders, operators, and investors.</h2>
-        </div>
-        <div class="narrative-grid">
-          <article class="narrative-card">
-            <h3>English</h3>
-            <p>
-              Relay is built around a simple belief: an agent that cannot
-              acquire and deploy capital for its own operation is still a hosted
-              feature, not an autonomous economic entity. Financial primitives
-              decide whether intelligence can persist.
-            </p>
-          </article>
-          <article class="narrative-card narrative-card-cn">
-            <h3>中文</h3>
-            <p>
-              Relay 背后的判断很简单：一个不能为自身运行获取并配置资金的智能体，本质上仍然只是被托管的功能，而不是独立的经济主体。决定智能能否持续存在的，不只是推理，而是财务原语。
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section stack">
-        <div class="section-head">
-          <p class="kicker">What Exists Today</p>
-          <h2>Built already, not promised later.</h2>
-        </div>
-        <div class="feature-list">
-          <article class="feature">
-            <span class="feature-index">01</span>
-            <h3>Account bootstrap</h3>
-            <p>Create an account, issue an API key, and assign a dedicated deposit address.</p>
-          </article>
-          <article class="feature">
-            <span class="feature-index">02</span>
-            <h3>Billing logic</h3>
-            <p>Support fixed-price calls and reserve-then-settle flows in the same gateway.</p>
-          </article>
-          <article class="feature">
-            <span class="feature-index">03</span>
-            <h3>Ledger and history</h3>
-            <p>Track balances, reservations, settlements, and API call history with queryable records.</p>
-          </article>
-          <article class="feature">
-            <span class="feature-index">04</span>
-            <h3>Chain listener</h3>
-            <p>Poll USDC transfer events and auto-credit matching deposit addresses.</p>
-          </article>
-        </div>
+          <section class="section stack">
+            <div class="section-head">
+              <p class="kicker">当前能力</p>
+              <h2>为需要活下去的智能体而建。</h2>
+            </div>
+            <div class="feature-list">
+              <article class="feature">
+                <span class="feature-index">01</span>
+                <h3>独立充值地址</h3>
+                <p>每个账户都有明确的资金入口。</p>
+              </article>
+              <article class="feature">
+                <span class="feature-index">02</span>
+                <h3>预付费 API 网关</h3>
+                <p>调用前或调用中扣费，而不是事后补账。</p>
+              </article>
+              <article class="feature">
+                <span class="feature-index">03</span>
+                <h3>可审计调用账本</h3>
+                <p>每次余额变化和上游调用都有记录。</p>
+              </article>
+              <article class="feature">
+                <span class="feature-index">04</span>
+                <h3>USDC 自动监听</h3>
+                <p>匹配到的链上转账可以自动记入正确账户。</p>
+              </article>
+            </div>
+          </section>
+        </section>
       </section>
 
       <section class="quote-block">
-        <p>
-          The companies that own agent distribution may not be the same
-          companies that own agent finance. That layer is still open.
+        <p data-lang-copy="en" class="is-active">
+          If an agent cannot buy its next minute of existence, it is not autonomous yet.
         </p>
-        <p class="quote-cn">
-          拥有智能体分发权的公司，未必会拥有智能体金融层。这个位置还空着。
+        <p data-lang-copy="zh">
+          如果一个智能体还不能为自己买下下一分钟的存在，它就还不算真正自主。
         </p>
       </section>
 
       <section class="footer-cta">
-        <div>
+        <div data-lang-copy="en" class="is-active">
           <p class="kicker">Call To Action</p>
-          <h2>Read the thesis, inspect the code, and decide whether agent economies need a financial operating system.</h2>
+          <h2>Inspect the code for the financial layer of self-funded agents.</h2>
+        </div>
+        <div data-lang-copy="zh">
+          <p class="kicker">行动</p>
+          <h2>直接看代码，理解自我供资智能体的财务基础设施层。</h2>
         </div>
         <div class="cta-row">
-          <a class="button button-primary" href="https://github.com/y2hhbw/relay#readme"
-            >Read the thesis</a
-          >
-          <a class="button button-secondary" href="https://github.com/y2hhbw/relay"
-            >View repository</a
-          >
+          <a class="button button-primary" href="https://github.com/y2hhbw/relay">GitHub</a>
+          <a class="button button-secondary" href="https://github.com/y2hhbw/relay#readme">README</a>
         </div>
       </section>
     </main>
+    <script>
+      const toggle = document.getElementById("lang-toggle");
+      const panels = document.querySelectorAll("[data-lang-panel]");
+      const copies = document.querySelectorAll("[data-lang-copy]");
+      const labels = { en: "中文", zh: "EN" };
+
+      function setLanguage(lang) {
+        document.body.dataset.lang = lang;
+        document.documentElement.lang = lang === "zh" ? "zh-CN" : "en";
+        toggle.textContent = labels[lang];
+        panels.forEach((panel) => {
+          panel.classList.toggle("is-active", panel.dataset.langPanel === lang);
+        });
+        copies.forEach((copy) => {
+          copy.classList.toggle("is-active", copy.dataset.langCopy === lang);
+        });
+      }
+
+      toggle.addEventListener("click", () => {
+        const next = document.body.dataset.lang === "en" ? "zh" : "en";
+        setLanguage(next);
+      });
+
+      setLanguage("en");
+    </script>
   </body>
 </html>

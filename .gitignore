@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+*.db
+*.sqlite
+*.sqlite3
+*.log
+.relay-listener-state.json
+.sisyphus/
+docs/handoff-*.md
+docs/plans/
